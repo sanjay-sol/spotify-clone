@@ -19,11 +19,6 @@ let songs = [
     {songName: "Let me Loveyou",filePath:"songs/9.mp3",coverPath:"covers/9.jpg"},
      {songName: "Starboy",filePath:"songs/10.mp3",coverPath:"covers/10.jpg"},
 ]
-// songs.forEach((element,i)=>{
-//     console.log(element,i);
-//     element.getElementsByTagName("img")[0].src = songs[i].filePath;
-
-// })
 songItems.forEach((element,i)=>{
     element.getElementsByTagName("img")[0].src = songs[i].coverPath;
     element.getElementsByClassName("songName")[0].innerText = songs[i].songName;
